@@ -1,0 +1,25 @@
+.header
+	padding: 15px 0
+	&-contacts
+		display: flex
+		justify-content: flex-end
+		align-items: center
+		&__phone
+			font-size: 22px
+			font-weight: 500
+			margin-right: 13px
+
+			&:first-child  // палочка между номерами -- обращение к первому эл-ту из этого классаы
+				border-right: 1px solid #cfcfd0
+				padding-right: 13px
+			
+		&__button
+			margin-left: 14px
+			padding: 10px 20px
+
+button
+	border: none
+	outline: none
+	cursor: pointer
+	&:hover
+		background-color: lighten($active-color,10)

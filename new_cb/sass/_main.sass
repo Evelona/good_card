@@ -1,0 +1,65 @@
+.main
+	position: relative
+	padding-top: 65px
+	padding-bottom: 60px
+	background: #373737 url(../img/main/background.png) center no-repeat 	
+	color: $text-color-light
+	z-index: 1
+	&::before
+		content: ''
+		dispay: block
+		position: absolute
+		left: 0
+		top: 0
+		width: 100%
+		height: 100%
+		background-color: rgba(0,0,0,0.6)
+		z-index: 0
+	&-img
+		left: -105px
+		position: relative
+		&::before // круг позади коробок
+			content: ''
+			position: absolute
+			width: 390px
+			height: 390px
+			// выравниваем по центру
+			left: 50%
+			margin-left: -95px
+			// 
+			border: 1px solid $text-color-light
+			border-radius: 100%
+			z-index: -1
+	&-text__title
+		margin-bottom: 10px
+		font-size: 41px
+		font-weight: 700
+		line-height: 42px
+	&-text__subtitle
+		font-size: 28px
+		font-weight: 300
+		margin-bottom: 10px
+	&-text__form
+		background-color: rgba(#fff, 0.2)
+		padding: 24px 26px
+.form
+	display: flex
+	margin-bottom: 12px
+	&-title
+		font-size: 20px
+		font-weight: 300
+		margin-bottom: 20px
+		&_imp
+			font-weight: 700
+			text-transform: uppercase
+	&_input
+		padding: 10px
+		border-radius: 4px
+		margin-right: 10px
+		border: none
+		vertical-align: middle
+		flex-basis: 65%
+.form-title_small 
+	font-size: 14px
+	font-weight: 300
+	padding-left: 20px
